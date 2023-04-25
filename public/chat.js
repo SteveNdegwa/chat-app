@@ -5,30 +5,41 @@ socket.on('message', (message) => {
     displayMessage(message);
 })
 
-socket.on('chatMessage', (message) => {
+socket.on('chatMessage', (message,user) => {
     console.log(message);
-    displayChatMessage(message);
+    displayChatMessage(message,user);
 })
 
 let displayMessage = (msg) => {
+    const div = document.createElement('div');
+    div.className = "message-wrap";
     const p = document.createElement('p');
     p.innerHTML = msg;
     p.className = "message";
 
+    div.append(p);
+
     const messagesContainer = document.getElementById("messages-container");
-    messagesContainer.appendChild(p);
+    messagesContainer.appendChild(div);
 
 }
 
-let displayChatMessage = (msg) => {
+let displayChatMessage = (msg,user) => {
   
-
     const div = document.createElement('div');
-    div.innerHTML = msg;
-    div.className = "receive-message";
+    const p = document.createElement('p');
+    const name = document.createElement('p');
+    name.innerText = user;
+    p.innerText = msg;
+    div.className = "receive-message-div";
+    p.className = "receive-message-p";
+    name.className = "receive-name";
+
+    div.append(name);
+    div.append(p);
 
 
-    const messagesContainer = document.getElementById("messages-container");
+    const messagesContainer = document.getElementById('messages-container');
     messagesContainer.appendChild(div);
 
 }
@@ -40,8 +51,16 @@ messageBtn.addEventListener('click', () => {
     const messageField = document.getElementById('message');
     let message = messageField.value;
     const div = document.createElement('div');
-    div.innerHTML = message;
-    div.className = "send-message";
+    const p = document.createElement('p');
+    const name = document.createElement('p');
+    name.innerText = "You";
+    p.innerText = message;
+    div.className = "send-message-div";
+    p.className = "send-message-p";
+    name.className = "send-name";
+
+    div.append(name);
+    div.append(p);
 
 
     const messagesContainer = document.getElementById('messages-container');

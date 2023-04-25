@@ -49,33 +49,71 @@ form{
 
 
 .message{
-    width: 100%;
-    line-height: 50px;
-    background-color: lightgray;
-    margin-bottom: 10px;
-}
-
-.receive-message{
-    align-self: flex-start;
-    height: auto;
-    min-height: 40px;
-    width: 300px;
-    background-color: dimgray;
+    background-color: transparent;
     margin-bottom: 10px;
     word-wrap: break-word;
+    color: dimgray;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
 
+.message-wrap{
+    padding: 10px 10px;
+    background-color: lightgray;
+    margin-bottom: 10px; 
 }
 
 
 
-.send-message{
+
+.send-message-div{
     align-self: flex-end;
     height: auto;
     min-height: 40px;
-    width: 300px;
-    background-color: green;
-    color: white;
+    width: auto;
+    max-width: 250px;
+    background-color: lightgray;
     margin-bottom: 10px;
-    word-wrap: break-word;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 10px;
 }
 
+.send-name{
+    background-color: transparent;
+    word-wrap: break-word;
+    color: dimgray; 
+    margin-bottom: 10px;
+}
+
+.send-message-p{
+    background-color: transparent;
+    word-wrap: break-word;
+    color: black;
+}
+
+
+
+.receive-message-div{
+    align-self: flex-start;
+    height: auto;
+    min-height: 40px;
+    width: auto;
+    max-width: 250px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.receive-name{
+    background-color: transparent;
+    word-wrap: break-word;
+    color: dimgray; 
+    margin-bottom: 10px;
+}
+
+.receive-message-p{
+    background-color: transparent;
+    word-wrap: break-word;
+    color: black;
+}
