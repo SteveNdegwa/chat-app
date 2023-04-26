@@ -58,6 +58,10 @@ form{
 }
 
 .message-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 10px 10px;
     background-color: lightgray;
     margin-bottom: 10px; 
@@ -68,8 +72,6 @@ form{
 
 .send-message-div{
     align-self: flex-end;
-    height: auto;
-    min-height: 40px;
     width: auto;
     max-width: 250px;
     background-color: lightgray;
@@ -83,20 +85,20 @@ form{
     word-wrap: break-word;
     color: dimgray; 
     margin-bottom: 10px;
+    background-color: lightgray;
 }
 
 .send-message-p{
     background-color: transparent;
     word-wrap: break-word;
     color: black;
+    background-color: lightgray;
 }
 
 
 
 .receive-message-div{
     align-self: flex-start;
-    height: auto;
-    min-height: 40px;
     width: auto;
     max-width: 250px;
     background-color: lightgray;
@@ -110,10 +112,11 @@ form{
     word-wrap: break-word;
     color: dimgray; 
     margin-bottom: 10px;
+    background-color: lightgray;
 }
 
 .receive-message-p{
-    background-color: transparent;
+    background-color: lightgray;
     word-wrap: break-word;
     color: black;
 }
