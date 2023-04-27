@@ -64,7 +64,7 @@ form{
     justify-content: center;
     padding: 10px 10px;
     background-color: lightgray;
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
 }
 
 
@@ -75,7 +75,7 @@ form{
     width: auto;
     max-width: 250px;
     background-color: lightgray;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px 20px;
     border-radius: 10px 10px 0px 10px;
 }
@@ -95,6 +95,15 @@ form{
     background-color: lightgray;
 }
 
+.send-time{
+    background-color: transparent;
+    word-wrap: break-word;
+    color: dimgray; 
+    margin-top: 10px;
+    background-color: lightgray;
+}
+
+
 
 
 .receive-message-div{
@@ -102,7 +111,7 @@ form{
     width: auto;
     max-width: 250px;
     background-color: lightgray;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px 20px;
     border-radius: 10px 10px 10px 0px;
 }
@@ -119,4 +128,12 @@ form{
     background-color: lightgray;
     word-wrap: break-word;
     color: black;
+}
+
+.receive-time{
+    background-color: transparent;
+    word-wrap: break-word;
+    color: dimgray; 
+    margin-top: 10px;
+    background-color: lightgray;
 }
